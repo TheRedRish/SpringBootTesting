@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View User</title>
+    <link rel="stylesheet" href="/user/user.css">
+</head>
+<body>
+<div class="container">
+    <h1>User Details</h1>
+    <div class="user-details">
+        <p th:text="'ID: ' + ${user.id}"></p>
+        <p th:text="'Username: ' + ${user.username}"></p>
+        <p th:text="'Date of Birth: ' + ${user.dateOfBirth}"></p>
+        <p th:text="'Role: ' + ${user.role}"></p>
+    </div>
+
+    <div th:if="${not #lists.isEmpty(user.results)}">
+        <h2>User Results</h2>
+        <table class="user-results">
+            <thead>
+            <tr>
+                <th>Time</th>
+                <th>Distance</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="result : ${user.results}">
+                <td th:text="${result.time}"></td>
+                <td th:text="${result.distance}"></td>
+                <td>
+                    <a th:href="@{'/updateResult/' + ${result.id}}" class="btn btn-update">Edit</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button>
+        <a href="/" class="btn btn-primary">Go to Home Page</a>
+    </button>
+</div>
+</body>
+</html>

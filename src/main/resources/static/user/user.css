@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+
+h2, h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="date"], select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px 20px; /* Adjusted padding */
+    background-color: #28a745; /* Default button color */
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #218838; /* Hover button color */
+}
+
+#message {
+    margin-top: 15px;
+    text-align: center;
+    color: red;
+}
+
+.success-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Adjusted width */
+    text-align: center;
+}
+
+.success-container h1 {
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.user-details p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+button {
+    margin-top: 20px; /* Adjusted margin */
+}
+
+button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+button a:hover {
+    text-decoration: underline;
+}
+
+.user-details {
+    margin-bottom: 20px;
+}
+
+.user-results {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.user-results th, .user-results td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.user-results th {
+    background-color: #f2f2f2;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    background-color: #007bff; /* Default button color */
+    color: #fff;
+}
+
+button:hover {
+    background-color: #0056b3; /* Hover button color */
+}

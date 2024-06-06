@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Result</title>
+    <link rel="stylesheet" href="/result/result.css">
+</head>
+<body>
+<div class="container">
+    <h1>Create Result</h1>
+    <form action="/results/createNew" method="post" class="form-container">
+        <div class="form-group">
+            <label for="userId">User ID:</label>
+            <input type="text" id="userId" name="userId" required>
+        </div>
+        <div class="form-group">
+            <label for="time">Time:</label>
+            <input type="number" id="time" name="time" required>
+        </div>
+        <div class="form-group">
+            <label for="distance">Distance:</label>
+            <input type="number" id="distance" name="distance" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Create Result</button>
+    </form>
+</div>
+</body>
+</html>
